@@ -1,0 +1,1051 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.bk.ventures/paypikit/basictoassembled/">
+      
+      
+        <link rel="prev" href="../gettingstarted/">
+      
+      
+        <link rel="next" href="../assembledtofull/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
+    
+    
+      
+        <title>Assembling the Basic Kit - BKT Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#parts" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="BKT Documentation" class="md-header__button md-logo" aria-label="BKT Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BKT Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Assembling the Basic Kit
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="BKT Documentation" class="md-nav__button md-logo" aria-label="BKT Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    BKT Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PayPiKit
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            PayPiKit
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gettingstarted/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Assembling the Basic Kit
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Assembling the Basic Kit
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#large-parts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Large Parts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rails-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rails Hardware
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raspberry-pi-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Hardware
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e-port-dev-kit-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      E-Port Dev Kit Hardware
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voltage-regulator-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voltage Regulator Hardware
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cover-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cover Hardware
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools Needed:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembledtofull/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finishing the Assembled Kit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aircraftinstallation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing on the Aircraft
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../customization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customizations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../specs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAD and Specs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#large-parts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Large Parts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rails-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rails Hardware
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raspberry-pi-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Hardware
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e-port-dev-kit-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      E-Port Dev Kit Hardware
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voltage-regulator-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voltage Regulator Hardware
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cover-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cover Hardware
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools Needed:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<p>In this section, we will walk you through how to assemble the basic kit - effectively making it an Assembled kit.</p>
+<h1 id="parts">Parts</h1>
+<p>First, make sure you have all these parts in your kit.</p>
+<p><img alt="" src="../../images/basickitlayflat2.png" />
+<img alt="" src="../../images/basickitlayflat.png" /></p>
+<p>They will come in bags per function so you can easily make sure you have it all.</p>
+<h2 id="large-parts">Large Parts</h2>
+<table>
+<thead>
+<tr>
+<th>Picture</th>
+<th>Part Name</th>
+<th>Description</th>
+<th>Qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="image" src="../../images/rails-part.png" style="width:240px; text-align:center" /></td>
+<td>Rails</td>
+<td>Attaches to the M350, allows the kit to be attached to the vehicle</td>
+<td>1</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/plate-part.png" style="width:240px; text-align:center" /></td>
+<td>Plate</td>
+<td>Base of the kit, supports all the electronics, slides into the rails</td>
+<td>1</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/cover-part.png" style="width:240px; text-align:center" /></td>
+<td>Cover</td>
+<td>Optional cover to protect the electronics. Modifiable to attached extra sensors.</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rails-hardware">Rails Hardware</h2>
+<table>
+<thead>
+<tr>
+<th>Picture</th>
+<th>Part Name</th>
+<th>Description</th>
+<th>Qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="image" src="../../images/rails-front-spacer-part.png" style="width:240px; text-align:center" /></td>
+<td>Rails Front Spacers</td>
+<td>Higher than the back, they level the rails when attached to the vehicle</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/rails-back-spacer-part.png" style="width:240px; text-align:center" /></td>
+<td>Rails Back Spacers</td>
+<td>Lower than the front, they level the rails when attached to the vehicle</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/m3x15-socket-screw.png" style="width:240px; text-align:center" /></td>
+<td>M3x15mm Socket Screws</td>
+<td>Attaches the <em>front</em> of the rails to the vehicle</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/m3x10-socket-screw.png" style="width:240px; text-align:center" /></td>
+<td>M3x10mm Socket Screws</td>
+<td>Attaches the <em>back</em> of the rails to the vehicle</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/placeholder.png" style="width:240px; text-align:center" /></td>
+<td>M3x4mm Heat Set Insert</td>
+<td>Inserted into the <em>plate</em>, allows to lock the kit to the vehicle for extra safety</td>
+<td>1</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/m3x8-socket-screw.png" style="width:240px; text-align:center" /></td>
+<td>M3x8mm Socket Screw</td>
+<td>Allows the kit to be secured to the rails as an additional safety</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="raspberry-pi-hardware">Raspberry Pi Hardware</h2>
+<table>
+<thead>
+<tr>
+<th>Picture</th>
+<th>Part Name</th>
+<th>Description</th>
+<th>Qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="image" src="../../images/raspberry-pi-shelves-part.png" style="width:240px; text-align:center" /></td>
+<td>Pi Shelves</td>
+<td>Attaches to the M350, allows the kit to be attached to the vehicle</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/placeholder.png" style="width:240px; text-align:center" /></td>
+<td>M3x4mm Heat Set Insert</td>
+<td>Inserted into the <em>plate</em>, allows to lock the kit to the vehicle for extra safety</td>
+<td>4</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/m3x8-socket-screw.png" style="width:240px; text-align:center" /></td>
+<td>M3x8mm Socket Screw</td>
+<td>Allows the kit to be secured to the rails as an additional safety</td>
+<td>4</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/placeholder.png" style="width:240px; text-align:center" /></td>
+<td>M2.5x4mm Heat Set Inserts</td>
+<td>Allows the kit to be secured to the rails as an additional safety</td>
+<td>4</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/m2.5x8-socket-screw.png" style="width:240px; text-align:center" /></td>
+<td>M2.5x8mm Socket Screw</td>
+<td>Allows the kit to be secured to the rails as an additional safety</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<h2 id="e-port-dev-kit-hardware">E-Port Dev Kit Hardware</h2>
+<table>
+<thead>
+<tr>
+<th>Picture</th>
+<th>Part Name</th>
+<th>Description</th>
+<th>Qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="image" src="../../images/eport-spacer-part.png" style="width:240px; text-align:center" /></td>
+<td>E-Port Spacers</td>
+<td>Attaches to the M350, allows the kit to be attached to the vehicle</td>
+<td>4</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/placeholder.png" style="width:240px; text-align:center" /></td>
+<td>M2x3mm Heat Set Inserts</td>
+<td>Allows the kit to be secured to the rails as an additional safety</td>
+<td>4</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/m2x8-socket-screw.png" style="width:240px; text-align:center" /></td>
+<td>M2x8mm Socket Screw</td>
+<td>Allows the kit to be secured to the rails as an additional safety</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<h2 id="voltage-regulator-hardware">Voltage Regulator Hardware</h2>
+<table>
+<thead>
+<tr>
+<th>Picture</th>
+<th>Part Name</th>
+<th>Description</th>
+<th>Qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="image" src="../../images/voltage-regulator-part.png" style="width:240px; text-align:center" /></td>
+<td>Voltage Regulator Mount</td>
+<td>Attaches to the M350, allows the kit to be attached to the vehicle</td>
+<td>1</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/placeholder.png" style="width:240px; text-align:center" /></td>
+<td>M3x4mm Heat Set Insert</td>
+<td>Inserted into the <em>plate</em>, allows to lock the kit to the vehicle for extra safety</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/m3x8-socket-screw.png" style="width:240px; text-align:center" /></td>
+<td>M3x8mm Socket Screw</td>
+<td>Allows the kit to be secured to the rails as an additional safety</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/placeholder.png" style="width:240px; text-align:center" /></td>
+<td>M2x3mm Heat Set Inserts</td>
+<td>Allows the kit to be secured to the rails as an additional safety</td>
+<td>4</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/m2x8-socket-screw.png" style="width:240px; text-align:center" /></td>
+<td>M2x8mm Socket Screw</td>
+<td>Allows the kit to be secured to the rails as an additional safety</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cover-hardware">Cover Hardware</h2>
+<table>
+<thead>
+<tr>
+<th>Picture</th>
+<th>Part Name</th>
+<th>Description</th>
+<th>Qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="image" src="../../images/cover-part.png" style="width:240px; text-align:center" /></td>
+<td>Cover</td>
+<td>Attaches to the M350, allows the kit to be attached to the vehicle</td>
+<td>1</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/m3x10-socket-screw.png" style="width:240px; text-align:center" /></td>
+<td>M3x10mm Socket Screws</td>
+<td>Secures the cover to the plate</td>
+<td>4</td>
+</tr>
+<tr>
+<td><img alt="image" src="../../images/placeholder.png" style="width:240px; text-align:center" /></td>
+<td>M3x4mm Heat Set Inserts</td>
+<td>Installed onto the plate, allows the cover to be secured</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tools-needed">Tools Needed:</h2>
+<ul>
+<li>M3 Hex driver/allen wrench</li>
+<li>M2.5 Hex driver/allen wrench</li>
+<li>M2 Hex driver/allen wrench</li>
+<li>Pliers/Tweezers to hold parts during alignment</li>
+<li>PH2 Screw driver</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We recommend getting a kit like the <a href="https://store.ifixit.co.uk/products/mako-driver-kit-b-stock">iFixit Mako Precision</a> or the <a href="https://hototools.com/products/hoto-28in1-precision-screwdriver-kit">Hototools Kits</a></p>
+<p><em>Verify they have all the bits needed as these kit may have changed since this documentation was last updated.</em></p>
+</div>
+<h1 id="mounting-the-rails-on-the-aircraft">Mounting the Rails on the Aircraft</h1>
+<p>Grab the rails and the hardware associated with it (is labelled accordingly)</p>
+<p>Using one <code>M3x15</code> screw and one of the <code>front spacers</code> (the longest one) attach the rails with the flat piece facing forward:</p>
+<p><img alt="Installing the first screw of the rails on the M350" src="../../images/railsonm350firstspacer.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure not to fully tighten it, it will make it harder to install the other spacers and screws.</p>
+</div>
+<p>Continue by installing the other front screw in the same way and install the <code>back spacer</code> using the provided <code>M3x10mm</code> screws.</p>
+<p>Once all are place, tighten all screws:</p>
+<p><img alt="Rails installed on the M350" src="../../images/railsinstalledonm350.png" /></p>
+<p>At this point, you can focus on the kit and leave the vehicle to the side.</p>
+<h1 id="assembling-the-kit">Assembling the Kit</h1>
+<h2 id="heat-set-inserts">Heat Set Inserts</h2>
+<p>Because this kit is intended to be experimented with, we opted for heat set inserts. This will allow for multiple assembly/disassembly with minimum wear and tear on the mounts.</p>
+<p>This also means that for this step, you need to place the inserts with a soldering iron.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A unregulated soldering iron is enough, but a <a href="https://www.amazon.com/YIHUA-Soldering-Lead-Free-Conversion-Calibration/dp/B09289D99V/">cheap soldering station</a> comes at a minor cost increase for a huge improvement. 
+There are tons of chinese clones that work really well and use standard tip sizes like T18. This allows you to improve the station by getting heat set insert tips which makes it a lot easier to have precise results.</p>
+<p>The trick with a standard soldering iron is that the cone tip will bite in the thread and may pull the insert out right after insertion.</p>
+<p>Regardless, <strong>if you don't feel comfortable with the heat set insert, we recommend you get the assembled kit</strong> from us.</p>
+<p>For all the following insert placement, set your stations at around 210°C or 410°F as the kit is made of PLA. You can use a fume extractor if you choose too, but PLA is on the safer side when it comes to VOC during heating.</p>
+</div>
+<p>Before you start, you should decide how you are going to approach this task. We package the hardware per parts, but if you setup your soldering station, you may want to get all the inserting in one go.</p>
+<h2 id="plates-rails-insert">Plate's Rails Insert</h2>
+<p>The first thing we will do is place the heat set insert that will allow us to extra secure the kit to the rails.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The heat set inserts are sided. The tight space is the bottom part, and you insert it this way first.
+<center><img alt="" src="../../images/insertdescription.png" /></center></p>
+</div>
+<ol>
+<li>
+<p>Set up your soldering iron/station to 210°C/410°C</p>
+<p><img alt="" src="../../images/ironsetupforheatset.png" /></p>
+</li>
+<li>
+<p>Grab the M3 insert from the 'Rails' bag.</p>
+<p><img alt="" src="../../images/m3railsbag.png" /></p>
+</li>
+<li>
+<p>Place the bottom part of the insert into the hole - don't worry if it does not fully sit</p>
+<p><img alt="" src="../../images/m3railsplaced.png" /></p>
+</li>
+<li>
+<p>Press gently with the iron, the heat does the work, not the pressure.</p>
+<p><img alt="" src="../../images/m3railsinserting.png" /></p>
+</li>
+<li>
+<p>Once flush with the surface, remove the iron, let the plastic cool off - this can take a few minutes.</p>
+<p><img alt="" src="../../images/m3railsinserted.png" />
+<img alt="" src="../../images/m3railsinserteddone.png" /></p>
+</li>
+</ol>
+<h2 id="raspberry-pis-inserts">Raspberry Pi's Inserts</h2>
+<ol>
+<li>
+<p>Keep your soldering station ready as before</p>
+</li>
+<li>
+<p>Grad the 4x M3 inserts from the 'Raspberry Pi' bag:</p>
+<p><img alt="" src="../../images/m3raspberrypibag.png" /></p>
+</li>
+<li>
+<p>Place them inside their hole as we did for the rails' insert</p>
+<p><img alt="" src="../../images/m3raspberrypiplaced.png" /></p>
+</li>
+<li>
+<p>Press gently with the iron, the heat does the work, not the pressure.</p>
+</li>
+<li>
+<p>Once flush with the surface, remove the iron and let it cool off.</p>
+<p><img alt="" src="../../images/m3raspberrypiinstalled.png" /></p>
+</li>
+</ol>
+<p>Now we can move on to the shelves.</p>
+<ol>
+<li>
+<p>Grab the 2 shelves and the 4 M2.5 inserts from the <code>Raspberry Pi</code> bag</p>
+<p><img alt="" src="../../images/m25shelvesraspberrypibag.png" /></p>
+</li>
+<li>
+<p>Place the inserts as before and insert with the iron as described before</p>
+<p><img alt="" src="../../images/m25raspberrypiplaced.png" /></p>
+<p><img alt="" src="../../images/m25raspberrypiinserted.png" /></p>
+</li>
+<li>
+<p>Set them aside for final assembly later.</p>
+<p><img alt="" src="../../images/m25raspberrypiaside.png" /></p>
+</li>
+</ol>
+<h2 id="e-port-dev-kit-inserts">E-Port Dev Kit Inserts</h2>
+<ol>
+<li>Soldering iron/station ready using the same parameters</li>
+<li>
+<p>Grab the 4x M2 inserts from the <code>E-Port Dev Kit</code> bag</p>
+<p><img alt="" src="../../images/m2eportdevkitbag.png" /></p>
+</li>
+<li>
+<p>Place the inserts and heat insert them with the iron as done before</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These are tiny, and you may want to use pliers/tweezers.</p>
+<p>Also, don't worry if they don't sit inside the whole, you can grab them flat and move them in place with the iron.
+<center><img alt="" src="../../images/insert-grabbed-10fps-compressed.gif" /></center></p>
+</div>
+<p><img alt="" src="../../images/m2eportdevkitplaced.png" /></p>
+<p><img alt="" src="../../images/m2eportdevkitinserted.png" /></p>
+<h2 id="voltage-regulator-inserts">Voltage Regulator Inserts</h2>
+<ol>
+<li>Soldering iron/station ready using the same parameters</li>
+<li>
+<p>Grab the 2 M3 inserts from the <code>Voltage Regulator</code> bag</p>
+<p><img alt="" src="../../images/m3voltregbag.png" /></p>
+</li>
+<li>
+<p>Place the inserts and heat insert them with the iron as done before</p>
+<p><img alt="" src="../../images/m3voltregplaced.png" /></p>
+<p><img alt="" src="../../images/m3voltreginserted.png" /></p>
+</li>
+<li>
+<p>Grab the mount from the bag and the 4 M2 inserts</p>
+<p><img alt="" src="../../images/m2voltregbag.png" /></p>
+</li>
+<li>
+<p>Place the inserts and heat insert them with the iron as done before</p>
+<p><img alt="" src="../../images/m2voltregplaced.png" /></p>
+<p><img alt="" src="../../images/m2voltreginserted.png" /></p>
+</li>
+<li>
+<p>Set the parts aside for final assembly later</p>
+</li>
+</ol>
+<h2 id="cover-inserts">Cover Inserts</h2>
+<ol>
+<li>Soldering iron/station ready using the same parameters</li>
+<li>
+<p>Grab the 4x M3 inserts from the <code>Cover</code> bag</p>
+<p><img alt="" src="../../images/m3coverbag.png" /></p>
+</li>
+<li>
+<p>Place the inserts and heat insert them with the iron as done before</p>
+<p><img alt="" src="../../images/m3coverplaced.png" /></p>
+<p><img alt="" src="../../images/m3coverinserted.png" /></p>
+</li>
+<li>
+<p>Set aside the parts for final assembly later.</p>
+<p><img alt="" src="../../images/kitpreassembledaside.png" /></p>
+</li>
+</ol>
+<h2 id="next-steps">Next Steps</h2>
+<p>At this point, your kit is pre-assembled and ready to receive the electronics for final assembly.</p>
+<p><img alt="" src="../../images/kitpreassembledlayflat.png" /></p>
+<p>Go on to the next chapter for the steps to finalize your kit.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.path"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      
+    
+  </body>
+</html>
